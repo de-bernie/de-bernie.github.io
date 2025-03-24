@@ -4,8 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>brnrt</title>
+    <style>
+        body {
+            margin: 0px;
+            background-color: black;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            position: relative;
+        }
+        .content {
+            flex: 1; /* Allows content to take up remaining space */
+            display: flex;
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+        }
+        .footer {
+            position: sticky;
+            bottom: 0; /* Sticks to the bottom of the screen */
+            width: 100%; /* Full width */
+            text-align: center; /* Center text horizontally */
+            padding: 10px 0; /* Padding for spacing */
+            color: grey;
+            font-size: small;
+        }
+        .footer a:link, .footer a:visited {
+            color: grey;
+        }
+        .image {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
 </head>
 <body>
-    <h1>beernaert.xyz</h1>
+    <div class="container">
+        <div class="content">
+            <script>
+                var user = "webmaster";
+                var domain = "beernaert.xyz";
+                document.write('<a href="mailto:' + user + '@' + domain + '"><img src="img/pexels-maksgelatin-5605061_small.jpg" class="image" alt="Image from Pexels.com"></a>');
+            </script>
+        </div>
+        <div class="footer">image from <a href="https://www.pexels.com/@maksgelatin/" target="_blank">pexels.com</a></div>
+    </div>
 </body>
 </html>
